@@ -17,7 +17,7 @@ const StyledAnswer = styled.h4`
 const SummaryCard = ({ text, reply }) => (
   <StyledCard className="summary-card">
     <StyledQuestion> {`Q: ${text}`}</StyledQuestion>
-    <StyledAnswer> {reply}</StyledAnswer>
+    <StyledAnswer> {`A: ${reply}`}</StyledAnswer>
   </StyledCard>
 );
 
