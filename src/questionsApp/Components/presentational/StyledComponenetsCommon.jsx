@@ -7,6 +7,7 @@ const Input = styled.input`
   background: papayawhip;
   border: none;
   border-radius: 3px;
+  font-size: x-large;
 `;
 
 const StyledQuestion = styled.h3`
