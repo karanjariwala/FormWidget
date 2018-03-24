@@ -1,4 +1,5 @@
 import React from 'react';
+import { Input, StyledTextInline } from './StyledComponenetsCommon';
 
 const handleChange = (value, props) => e => {
   e.target.value = value;
@@ -7,23 +8,23 @@ const handleChange = (value, props) => e => {
 
 const Boolean = props => (
   <div>
-    YES{' '}
-    <input
+    <StyledTextInline>YES</StyledTextInline>{' '}
+    <Input
       type="radio"
       name="same"
-      value="Y"
-      checked={props.value === 'Y'}
+      value="Yes"
+      checked={props.value === 'Yes'}
       {...props}
-      onChange={handleChange('Y', props)}
+      onChange={handleChange('Yes', props)}
     />
-    NO{' '}
-    <input
+    <StyledTextInline>NO</StyledTextInline>{' '}
+    <Input
       type="radio"
       name="same"
-      value="N"
-      checked={props.value === 'N'}
+      value="No"
+      checked={props.value === 'No'}
       {...props}
-      onChange={handleChange('N', props)}
+      onChange={handleChange('No', props)}
     />
   </div>
 );

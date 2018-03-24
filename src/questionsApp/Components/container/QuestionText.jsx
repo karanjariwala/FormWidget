@@ -1,8 +1,17 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { questionTextSelector } from './selector';
+import styled from 'styled-components';
 
-const QuestionText = ({ text }) => <div>{text}</div>;
+const StyledQuestionText = styled.h1`
+  font-size: 1em;
+  text-align: center;
+  color: tomato;
+`;
+
+const QuestionText = ({ text }) => (
+  <StyledQuestionText>{text}</StyledQuestionText>
+);
 
 const mapStateToProps = state => ({
   text: questionTextSelector(state),
