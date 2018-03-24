@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StyledQuestion } from './StyledComponenetsCommon';
+import '../../App.css';
 
 const StyledCard = styled.div`
   margin: 0 auto;
   text-align: left;
-  width: 40%;
+  width: 35%;
 `;
 
 const StyledAnswer = styled.h4`

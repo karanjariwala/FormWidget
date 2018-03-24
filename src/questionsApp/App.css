@@ -2,3 +2,15 @@
   text-align: center;
   height: 100vh;
 }
+
+@media only screen and (max-device-width: 480px) {
+  .summary-card {
+    width: 95% !important;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .summary-card {
+    width: 60% !important;
+  }
+}
