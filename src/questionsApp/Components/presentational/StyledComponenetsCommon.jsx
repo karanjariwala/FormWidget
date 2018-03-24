@@ -11,7 +11,7 @@ const Input = styled.input`
 
 const StyledQuestion = styled.h3`
   font-size: 1em;
-  text-align: center;
+  text-align: left;
   color: tomato;
 `;
 

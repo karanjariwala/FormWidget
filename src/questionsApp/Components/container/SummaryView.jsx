@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import { connect } from 'react-redux';
@@ -11,24 +11,21 @@ const Title = styled.h1`
   color: palevioletred;
 `;
 
-class SummaryView extends Component {
-  render() {
-    const { answeredQuestions } = this.props;
-    let toRender = <span />;
-    if (Array.isArray(answeredQuestions)) {
-      toRender = (
-        <div>
-          <Title>Claim Submission</Title>
-          {answeredQuestions.map(question => {
-            return <SummaryCard key={question.id} {...question} />;
-          })}
-        </div>
-      );
-    }
-
-    return toRender;
+const SummaryView = ({ answeredQuestions }) => {
+  let toRender = <span />;
+  if (Array.isArray(answeredQuestions)) {
+    toRender = (
+      <div>
+        <Title>Claim Submission</Title>
+        {answeredQuestions.map(question => {
+          return <SummaryCard key={question.id} {...question} />;
+        })}
+      </div>
+    );
   }
-}
+
+  return toRender;
+};
 
 const mapStateToProps = state => ({
   answeredQuestions: getAnsweredQuestions(state),

@@ -3,18 +3,19 @@ import styled from 'styled-components';
 import { StyledQuestion } from './StyledComponenetsCommon';
 
 const StyledCard = styled.div`
-  margin: 10px;
+  margin: 0 auto;
   text-align: left;
+  width: 50%;
 `;
 
 const StyledAnswer = styled.h4`
   font-size: 1em;
-  text-align: center;
+  text-align: left;
   color: mediumseagreen;
 `;
 
 const SummaryCard = ({ text, reply }) => (
-  <StyledCard>
+  <StyledCard className="summary-card">
     <StyledQuestion> {`Q: ${text}`}</StyledQuestion>
     <StyledAnswer> {reply}</StyledAnswer>
   </StyledCard>
