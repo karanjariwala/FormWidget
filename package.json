@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "http://karanjariwala.github.io/FormWidget",
   "dependencies": {
+    "gh-pages": "^1.1.0",
     "normalizr": "^3.2.4",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
