@@ -30,5 +30,6 @@ const SummaryView = ({ answeredQuestions }) => {
 const mapStateToProps = state => ({
   answeredQuestions: getAnsweredQuestions(state),
 });
+export const unWrapped = SummaryView;
 
 export default connect(mapStateToProps)(SummaryView);

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<unWrapped
+  props={
+    Object {
+      "answeredQuestions": Array [
+        Object {
+          "id": "C02",
+          "next": "C03",
+          "reply": "",
+          "text": "Please provide us with a contact number?",
+          "type": "string",
+        },
+        Object {
+          "id": "C03",
+          "next": null,
+          "reply": "",
+          "text": "Please provide us with a contact email address?",
+          "type": "string",
+        },
+      ],
+    }
+  }
+/>
+`;
