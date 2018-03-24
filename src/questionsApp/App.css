@@ -11,6 +11,6 @@
 
 @media only screen and (max-device-width: 480px) {
   .summary-card {
-    width: 95% !important;
+    width: 90% !important;
   }
 }
