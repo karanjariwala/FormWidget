@@ -12,7 +12,7 @@ const handleChange = (id, changeReply) => event => {
 const Options = ({ id, type, reply, changeReply }) => {
   let Componenet = TextInput;
 
-  if (type && type !== 'string') {
+  if (type) {
     Componenet = mapTypeToComponent[type];
   }
 
