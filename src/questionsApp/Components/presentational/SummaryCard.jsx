@@ -5,7 +5,7 @@ import { StyledQuestion } from './StyledComponenetsCommon';
 const StyledCard = styled.div`
   margin: 0 auto;
   text-align: left;
-  width: 50%;
+  width: 40%;
 `;
 
 const StyledAnswer = styled.h4`
